@@ -5,6 +5,10 @@ class Human{
     function  sayHi(){
         echo "Salam\n";
     }
+
+    function sayName(){
+        echo"My Name is { $this->$name }";
+    }
 }
 
 class Cat{
@@ -22,6 +26,7 @@ class Dog{
 
 $h1 = new Human();
 $h1->name ="Kuddus";
+$h1->sayName();
 $c1 = new Cat();
 $d1 = new Dog();
 
