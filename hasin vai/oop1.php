@@ -3,30 +3,31 @@
 class Human{
     public $name;
     function  sayHi(){
-        echo "Salam";
+        echo "Salam\n";
     }
 }
 
 class Cat{
     function sayHi(){
-        echo "Maue";
+        echo "Maue\n";
     }
 }
 
 class Dog{
     function sayHi(){
-        echo"vaoue";
+        echo"vaoue\n";
     }
 }
 
 
 $h1 = new Human();
-$h1->name ="Rubel";
+$h1->name ="Kuddus";
 $c1 = new Cat();
 $d1 = new Dog();
 
 $h1->sayHi();
-echo "\n"; // Output a new line
 $c1->sayHi();
+$d1->sayHi();
+echo $h1->name;
 
 
